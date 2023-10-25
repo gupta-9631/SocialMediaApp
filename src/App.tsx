@@ -1,15 +1,11 @@
-import { useState } from 'react'
+import Login from "./pages/login/Login"
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1 style={{display:"flex", justifyContent:"center"}}>
-       Hell Welcome to new react Project
-      </h1>
-    </>
+   <div>
+    <Login/>
+   </div>
   )
 }
 
