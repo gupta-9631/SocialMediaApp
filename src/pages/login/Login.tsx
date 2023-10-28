@@ -1,4 +1,5 @@
 import "./login.scss";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -11,14 +12,18 @@ function Login() {
             Consequuntur labore incidunt pariatur inventore nobis consequatur
             quos non odio velit! Quod dolorum voluptatibus earum dolores
           </p>
-          <span>Don't have an account</span>
-          <button>Register</button>
+          <span>Don't have an account?</span>
+          <Link to="/">
+            <button>Register</button>
+          </Link>
         </div>
         <div className="right">
           <h1>Login</h1>
-          <input type="text" placeholder="Username" />
-          <input type="password" placeholder="Password" />
-          <button>Login</button>
+          <form action="">
+            <input type="text" placeholder="Username" />
+            <input type="password" placeholder="Password" />
+            <button>Login</button>
+          </form>
         </div>
       </div>
     </div>
